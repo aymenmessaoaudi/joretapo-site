@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoRetapo — Sorties & restaurants à deux, recommandés pour vous</title>
+  <meta name="description" content="JoRetapo: recommandations de restaurants et de sorties pour les couples, réservation en un clic, calendrier partagé et idées personnalisées. L'app qui fait durer l'amour.">
+  <meta property="og:title" content="JoRetapo — Sorties & restaurants à deux">
+  <meta property="og:description" content="Recommandations de restaurants et de sorties pour couples, réservation facile, calendrier partagé et notifications intelligentes.">
+  <meta property="og:type" content="website">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #FFF0F5 0%, #FFF 50%, #F3E5F5 100%);
+      min-height: 100vh;
+      color: #333;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 24px 48px;
+    }
+    .logo-circle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 96px;
+      height: 96px;
+      background: #E91E63;
+      border-radius: 28px;
+      font-size: 48px;
+      margin-bottom: 20px;
+      box-shadow: 0 12px 40px rgba(233, 30, 99, 0.3);
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 900;
+      color: #E91E63;
+      letter-spacing: -2px;
+      margin-bottom: 12px;
+    }
+    .tagline {
+      font-size: 20px;
+      color: #757575;
+      max-width: 420px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+    .feature-card {
+      background: #FFF;
+      border-radius: 16px;
+      padding: 28px 24px;
+      border: 1px solid #F0F0F0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+    }
+    .feature-icon {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+    .feature-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #212121;
+      margin-bottom: 8px;
+    }
+    .feature-card p {
+      font-size: 14px;
+      color: #757575;
+      line-height: 1.5;
+    }
+    .store-buttons {
+      text-align: center;
+      margin: 48px 0;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding: 0 24px;
+    }
+    .store-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+    .store-btn:hover { transform: scale(1.05); }
+    .store-btn.apple {
+      background: #000;
+      color: #FFF;
+    }
+    .store-btn.google {
+      background: #FFF;
+      color: #333;
+      border: 2px solid #E0E0E0;
+    }
+    .store-icon { font-size: 24px; }
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: #9E9E9E;
+      font-size: 13px;
+    }
+    footer a {
+      color: #E91E63;
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 600px) {
+      h1 { font-size: 36px; }
+      .tagline { font-size: 17px; }
+      .hero { padding: 48px 20px 32px; }
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: linear-gradient(135deg, #1a0a10 0%, #121212 50%, #1a0f1f 100%); color: #E0E0E0; }
+      .feature-card { background: #1E1E1E; border-color: #333; }
+      .feature-card h3 { color: #E0E0E0; }
+      .feature-card p { color: #9E9E9E; }
+      .store-btn.google { background: #1E1E1E; color: #E0E0E0; border-color: #444; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="logo-circle">❤️</div>
+    <h1>JoRetapo</h1>
+    <p class="tagline">Sorties & restaurants à deux, recommandés rien que pour vous.<br>Réservez votre prochaine table, planifiez vos moments, ne ratez plus rien.</p>
+  </div>
+
+  <div class="features">
+    <div class="feature-card">
+      <div class="feature-icon">🍽️</div>
+      <h3>Restaurants recommandés</h3>
+      <p>Des restaurants repérés près de chez vous, adaptés à vos goûts et à votre budget, avec réservation en un clic pour votre prochain dîner en amoureux.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎭</div>
+      <h3>Idées de sorties</h3>
+      <p>Concerts, spectacles, expos, activités : on vous suggère les meilleures sorties à vivre à deux près de chez vous, mises à jour selon l'actualité locale.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📅</div>
+      <h3>Calendrier partagé</h3>
+      <p>Planifiez vos sorties et vos dîners, gardez la trace des dates vécues ensemble et ne ratez plus jamais un anniversaire ou une Saint-Valentin.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔔</div>
+      <h3>Notifications intelligentes</h3>
+      <p>Soyez alerté au bon moment pour réserver une table, préparer une surprise et ne jamais oublier une date importante.</p>
+    </div>
+  </div>
+
+  <div class="store-buttons">
+    <a href="#" class="store-btn apple">
+      <span class="store-icon">🍎</span>
+      App Store — Bientôt
+    </a>
+    <a href="#" class="store-btn google">
+      <span class="store-icon">▶️</span>
+      Google Play — Bientôt
+    </a>
+  </div>
+
+  <p style="text-align:center; max-width:640px; margin:0 auto 16px; padding:0 24px; font-size:14px; color:#9E9E9E; line-height:1.6;">
+    JoRetapo aide les couples à découvrir et réserver des restaurants et des sorties près de chez eux.
+    Certains liens de réservation peuvent être affiliés : nous pouvons percevoir une commission sans coût supplémentaire pour vous.
+  </p>
+
+  <footer>
+    <p>© 2026 JoRetapo — Tous droits réservés</p>
+    <p style="margin-top: 8px;">
+      <a href="privacy.html">Politique de confidentialité</a> ·
+      <a href="terms.html">Conditions d'utilisation</a> ·
+      <a href="mailto:contact@joretapo.com">Contact</a>
+    </p>
+  </footer>
+</body>
+</html>
